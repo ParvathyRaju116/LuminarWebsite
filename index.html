@@ -14,6 +14,14 @@
 
 <body>
   <style>
+    .nav-link {
+      color: black;
+    }
+
+    .nav-link:hover {
+      color: rgb(90, 22, 153);
+    }
+
     .d-block {
       height: 600px;
       opacity: 75%;
@@ -26,15 +34,43 @@
     .bt1 {
       color: white;
       background-color: rgb(90, 22, 153);
+      border: #5e068a;
       border-radius: 35px;
       height: 60px;
-      width: 250px;
+      width: 200px;
+      border: white;
     }
+
+    .bt1.a:hover {
+      border: #5e068a;
+      color: #630a90;
+      background-color: white;
+    }
+
+    .img1 {
+      filter: brightness(70%);
+
+    }
+    .c{
+      transition: .2s ease-in;
+    }
+    .c:hover{
+      transform: scale(1.003);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+
+    }
+    .fixed{
+      position: fixed;
+      margin-top: 610px;
+      margin-left: 70px;
+    }
+
   </style>
 
   </head>
 
   <body>
+
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
@@ -80,7 +116,7 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="3000">
-          <img src="./img/5.jpg" class="d-block w-100 " alt="">
+          <img src="./img/5.jpg" class="d-block w-100 img1" alt="">
           <div class="carousel-caption d-none d-md-block container mb-6 ">
             <h1 class="text-start  m-3  " style="font-size: 65px ;">Kerala's No.1 IT Finishing School <br>100% Placement
               Assistance</h1>
@@ -89,13 +125,18 @@
                 emerging technologies like BIG DATA, Data Science, Machine Learning,PYTHON, Software Testing.</p>
             </div>
             <div class="text-start ms-3 mt-3">
-              <a class="text-white p-3 mb-5 mt-5 btn text-center bg-rgb(90, 22, 153) bt1 fw-bold" href="" class="slider-btn">
+              <a class="text-white p-3 mb-5 mt-5 btn text-center  bt1 fw-bold" href="" class="slider-btn">
                 VIEW COURCES</a>
+
             </div>
+
           </div>
+
         </div>
+        <a href=""><img src="./img/unnamed.png" alt="" style="height: 40px; width: 40px; border-radius: 50px;" class="fixed"></a>
+
         <div class="carousel-item" data-bs-interval="3000">
-          <img src="./img/6.jpg" class="d-block w-100" alt="...">
+          <img src="./img/6.jpg" class="d-block w-100 img1" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h1 class="text-start  m-3  " style="font-size: 65px ;">Data Science, ML & AI
               <br>
@@ -109,12 +150,14 @@
               </p>
             </div>
             <div class="text-start ms-3 mt-3">
-              <a class="text-white p-3 mb-5 mt-5 btn text-center bg-rgb(90, 22, 153) bt1 fw-bold" href="" class="slider-btn">
+              <a class="text-white p-3 mb-5 mt-5 btn text-center  bt1 fw-bold" href="" class="slider-btn">
                 VIEW COURCES</a>
+
             </div>
           </div>
 
         </div>
+
       </div>
 
     </div>
@@ -126,14 +169,19 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+
     <br>
+
+
 
     <!-- MODAL -->
 
 
     <!-- Button trigger modal -->
     <div class="w-100   text-center ">
-      <button type="button" class="btn  m-5  w-25 text-white fw-bold" style="background-color:rgb(90, 22, 153); height: 50px;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      <button type="button" class="btn  m-5  w-25 text-white fw-bold"
+        style="background-color:rgb(90, 22, 153); height: 50px;" data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop">
         Launch modal
       </button>
     </div>
@@ -168,7 +216,7 @@
             <hr>
             <textarea name="" id="" cols="61" rows="3" class="border-0">Comments</textarea>
             <hr>
-            
+
 
             <div class=" container text-center m-3">
               <button type="button" class="btn text-white" data-bs-dismiss="modal"
@@ -181,6 +229,47 @@
         </div>
       </div>
     </div>
+    <br>
+    <div class="container w-100 bg-white">
+      <div class="row container">
+        <div class="col-lg-7  ps-5">
+          <h2 style="color:#5e068a; font-size: 35px; font-weight: 600;" class="mt-5 mb-3 ps-2">Luminar Technolab Pvt Ltd</h2>
+          <h4 style="font-size: 19px; color: #5e068a99; font: weight-300px;" class="mb-2 ps-2"> CIN :U80220KL2021PTC071578
+          </h4>
+
+          <p style="font-size: 15px; line-height:30px ;" class=" text-start ps-2">Luminar Technolab is an IT Finishing School
+            located near Infopark - Cochin, focused on providing advanced level software training to Students and by
+            helping them to get placed in IT companies. We are a team of IT professionals who have experience in IT
+            sector for more than 15 plus years. Our fresher’s career foster programs are Big Data Training, Data Science
+            Training, Data Analytics Training, Python Training, Software Testing Training & Selenium Training in Cochin,
+            Kerala are designed in such a way to match with the current industry requirements. Our Vision is to provide
+            100% placements to students those who enroll with us for our specialized courses.</p>
+          <a class="text-white p-3 mb-5 mt-5 btn text-center bt1 fw-bold">LEARN MORE</a>
+        </div>
+        <div class="col-lg-5 col-md-5 pe-1">
+          <img src="./img/WhatsApp Image 2023-07-10 at 10.43.56.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+    <h2 style="color:#5e068a ;" class="text-center">OUR <span style="color:  #5e068a99; ">COURCES</span></h2>
+    <div class="container w-75 mt-5" >
+      <div class="row c">
+        <div class="col-lg-7">
+          <img src="./img/data-science-1588143159.jpg" style="width: 100%; height: 350px;" alt="">
+        </div>
+        <div class="col-lg-5 pt-3" >
+          <h5 style="color: #5e068a;" class="mt-4">DATA SCIENCE - ML - AI - BIG DATA WITH CLOUD <br>
+            & TABLEAU</h5>
+            <p class ="mt-4" style="line-height: 25px;">Python, Hadoop, Spark, Data Analytics, Linear Algebra, Statistics, Probability Concepts, Machine Learning, Deep Learning, Data Science, Artificial Intelligence, Tableau, AWS Cloud.</p>
+            <p>📅 Next Batch : Jan 03rd 2022 (09:30 am - 11:30 am)</p>
+            <p>⏰ Duration: 6 Months, 5-6 Days a Week, 2-3 Hours/day</p>
+            <p class="mb-3">🧑‍🏫 Course Fees <a href="">VIEW MORE</a></p>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
 
 
   </body>
