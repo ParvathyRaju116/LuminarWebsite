@@ -26,9 +26,9 @@
       color: rgb(90, 22, 153);
     }
 
-    .d-block {
+    /* .d-block {
       height: 500px;
-    }
+    } */
 
     .h1 {
       margin-top: 100px;
@@ -39,8 +39,8 @@
       background-color:#5e068a;
       border: #5e068a 2px solid;
       border-radius: 35px;
-      height: 60px;
-      width: 200px;
+      height: 45px;
+      width: 160px;
       border: white;
     }
 
@@ -76,7 +76,7 @@
       border: #5e068a 3px solid;
       color: #5e068a;
       height: 45px;
-      width: 180px;
+      width: 160px;
       border-radius: 30px;
     
     }
@@ -85,15 +85,46 @@
       color: #ffffff;
     }
 
-    /* .div{
-      height: 35px;
-    } */
+    /* ANIMATION */
+
+    .head1,.p1,.btn1{
+      animation: slideup forwards ease 1s;
+    }
+
+    @keyframes slideup{
+      0%{
+        transform: translateY(100%)
+
+      }
+      100%{
+        transform:translateZ(0%) ;
+      }
+    }
+
+
+    /* MEDIA QUERY */
+
+    @media(max-width:1130px){
+    .head1{
+      font-size:30px !important;
+     }
+    .bt1 ,.viewbtn{
+      height: 40px;
+      width: 100px;
+      font-size: 10px;
+    }
+    .p1{
+      font-size: 12px;
+      padding-right: 50px !important;
+      
+    }
+  }
   </style>
 
   </head>
 
   <body style="margin: 0px;">
-    <div class="div row text-center" style="background-color: #5e068a; font-size: 80%;width: 100%; ">
+    <div class="div row text-center" style="background-color: #5e068a; font-size: 80%; margin: 0px; ">
       <div class="  mt-2 mb-2  col-lg-6 col-md-12 ">
         <a class="text-white" style="text-decoration: none;">Have any question?+91 8086 651 651</a>
       </div>
@@ -153,17 +184,17 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="3000">
-          <img src="./img/5.jpg" class="d-block w-100 img1" alt="">
-          <div class="carousel-caption d-none d-md-block container mb-6 ">
-            <h1 class="text-start  m-3 ps-5 head1 " style="font-size:65px ;">Kerala's No.1 IT Finishing School <br>100%
+          <img src="./img/5.jpg" class="d-block w-100 img1" alt="" style="height: 500px;">
+          <div class="carousel-caption d-md-block mb-6 ">
+            <h1 class="text-start  m-3 ps-1 head1 " style="font-size:65px;">Kerala's No.1 IT Finishing School <br>100%
               Placement
               Assistance</h1>
-            <div class="container ms-1 " style="font-size: 19px; width: 788px;">
-              <p class=" p1 ps-5 me-5 pe-5 text-start">We at LUMINAR TECHNOLAB offers best software training and placement in
-                emerging technologies like BIG DATA, Data Science, Machine Learning,PYTHON, Software Testing.</p>
+            <div class="container ms-1 " style="font-size:19px; width: 788px;">
+              <p class=" p1 ps- me-5 pe-5 text-start">We at LUMINAR TECHNOLAB offers best software <br>training and placement in
+                emerging technologies like <br>BIG DATA, Data Science, Machine Learning,PYTHON, Software Testing.</p>
             </div>
-            <div class="text-start ms-5 mb-3 ">
-              <a class="  p-3 mt-2 btn text-center  bt1 fw-bold" href="" class="slider-btn">
+            <div class="text-start ms-3 mb-3 ">
+              <a class=" pt-2 btn text-center  bt1 fw-bold" href="" class="slider-btn">
                 VIEW COURCES</a>
 
             </div>
@@ -179,21 +210,21 @@
         </div>
 
         <div class="carousel-item" data-bs-interval="3000">
-          <img src="./img/6.jpg" class="d-block w-100 img1" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="text-start ps-5  m-3 head1 " style="font-size:65px ">Data Science, ML & AI
+          <img src="./img/6.jpg" class="d-block w-100 img1" alt="..." style="height: 500px;">
+          <div class="carousel-caption d-md-block">
+            <h1 class="text-start ps-1  m-3 head1 " style="font-size:65px ">Data Science, ML & AI
               <br>
               Big Data - Hadoop & Spark
               <br>
               Python Data Science
             </h1>
             <div class="container ms-1 " style="font-size: 19px; width: 788px;">
-              <p class=" p1 me-5 pe-5 ps-5 text-start">We LUMINAR TECHNOLAB offers best software training and placement in
+              <p class=" p1 me-5 pe-5  text-start">We LUMINAR TECHNOLAB offers best software training and placement in
                 emerging technologies like Big Data, Hadoop, Spark,Data Scince, Machine Learning, Deep Learning and AI.
               </p>
             </div>
-            <div class="text-start ms-5 mb-3 ">
-              <a class=" p-3 mt-2 btn text-center  bt1 fw-bold" href="" class="slider-btn">
+            <div class="text-start ms-3 mb-3 ">
+              <a class=" p-2 btn text-center  bt1 fw-bold" href="" class="slider-btn">
                 VIEW COURCES</a>
 
             </div>
@@ -290,7 +321,7 @@
             Training, Data Analytics Training, Python Training, Software Testing Training & Selenium Training in Cochin,
             Kerala are designed in such a way to match with the current industry requirements. Our Vision is to provide
             100% placements to students those who enroll with us for our specialized courses.</p>
-          <a class=" p-3 mt-5 btn text-center bt1 fw-bold">LEARN MORE</a>
+          <a class=" p-2 btn text-center bt1 fw-bold">LEARN MORE</a>
         </div>
         <div class="col-lg-5 pe-1">
           <img src="./img/WhatsApp Image 2023-07-10 at 10.43.56.jpg" style="width: 90%;" alt="">
@@ -303,7 +334,7 @@
     <div class="container w-75 mt-5">
       <div class="row c">
         <div class="col-lg-7">
-          <img src="./img/data-science-1588143159.jpg" style="width: 100%; height: 350px;" alt="">
+          <img src="./img/data-science-1588143159.jpg" style="width: 99%; height: 350px;" alt="">
         </div>
         <div class="col-lg-5 pt-3">
           <h5 style="color: #5e068a;" class="mt-4">DATA SCIENCE - ML - AI - BIG DATA WITH CLOUD <br>
@@ -323,7 +354,7 @@
     <div class="container w-75 mt-5">
       <div class="row  ">
         <div class="col-lg-4 col-md-12 mb-4 ">
-          <div class="card c " style="width: 20rem; height: 420px; border: 0px; border-radius: 0px;">
+          <div class="card c " style="width: 19rem; height: 420px; border: 0px; border-radius: 0px;">
             <img src="./img/python-1588143191.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h6 class="card-title" style="color: #5e068a;">Python Django - Angular- Full Stack Web Development Expert
@@ -336,7 +367,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-12 mb-4">
-          <div class="card c " style="width: 20rem; height: 420px;  border: 0px;  border-radius: 0px;">
+          <div class="card c " style="width: 19rem; height: 420px;  border: 0px;  border-radius: 0px;">
             <img src="./img/st-1588580359.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title" style="color: #5e068a;">Software Testing Specialist</h5>
@@ -348,7 +379,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-12 mb-4 ">
-          <div class="card  c " style="width: 20rem; height: 420px;  border: 0px;  border-radius: 0px;">
+          <div class="card  c " style="width: 19rem; height: 420px;  border: 0px;  border-radius: 0px;">
             <img src="./img/ms-1623825586.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h6 class="card-title" style="color: #5e068a;">MEARN Stack Web Development Expert - Angular & React</h6>
